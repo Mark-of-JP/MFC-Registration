@@ -1,3 +1,4 @@
+import 'react-app-polyfill/ie11';
 import React, { Component } from 'react';
 import '../common/styles/App.css';
 
@@ -54,7 +55,7 @@ export default class Main extends Component {
                                         registration: formatInput(this.raw)
                                     })
                                     .then((response) => {
-                                        if(response.status !== 200)
+                                        if(response.status != 200)
                                             throw new Error()
                                         else
                                             this.setState({hasSubmitted: true})
@@ -88,7 +89,7 @@ export default class Main extends Component {
     render() {
         return (
             <header className="App-header">
-                <img src={logo} alto = "MFC" width={1000} />
+                <img src={logo} width={1000} />
                 <h2 style={{ color: 'black', fontFamily: '"Segoe UI"' }} >Conference Registration Form</h2>
 
                 {this.generateForm()}
