@@ -39,7 +39,7 @@ export default class PersonalInfoCard extends Component {
                 </Container>
 
                 <Container style={{ paddingBottom: 10 }}>
-                    <SelectComponent value="Brampton" style={{ marginRight: 30 }} onChange={(val) => { this.addInput("chapter", val)}}>
+                    <SelectComponent label = "Chapter" value="Brampton" style={{ marginRight: 30 }} onChange={(val) => { this.addInput("chapter", val)}}>
                         <MenuItem value="Brampton">Brampton</MenuItem>
                         <MenuItem value="Downtown Etobicoke">Downtown Etobicoke</MenuItem>
                         <MenuItem value="Durham">Durham</MenuItem>
@@ -53,12 +53,12 @@ export default class PersonalInfoCard extends Component {
                         <MenuItem value="Scarborough Southwest">Scarborough Southwest</MenuItem>
                         <MenuItem value="Scarborough Southeast">Scarborough Southeast</MenuItem>
                     </SelectComponent>
-                    <SelectComponent value="Couples" style={{ marginRight: 30 }} onChange={(val) => { this.addInput("section", val)}}>
+                    <SelectComponent label = "Section" value="Couples" style={{ marginRight: 30 }} onChange={(val) => { this.addInput("section", val)}}>
                         <MenuItem value="Couples">Couples</MenuItem>
                         <MenuItem value="Servant">Servant</MenuItem>
                         <MenuItem value="Handmaid">Handmaid</MenuItem>
                     </SelectComponent>
-                    <SelectComponent value="M" onChange={(val) => { this.addInput("shirt_size", val)}}>
+                    <SelectComponent label = "Shirt Size" value="M" onChange={(val) => { this.addInput("shirt_size", val)}}>
                         <MenuItem value="S">S</MenuItem>
                         <MenuItem value="M">M</MenuItem>
                         <MenuItem value="L">L</MenuItem>

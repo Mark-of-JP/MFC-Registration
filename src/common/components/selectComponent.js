@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import {
     Select,
-    FormControl
+    FormControl,
+    InputLabel
 } from '@material-ui/core'
 
 export default class SelectComponent extends Component {
@@ -16,7 +17,8 @@ export default class SelectComponent extends Component {
 
     render() {
         return (
-            <FormControl variant="outlined">
+            <FormControl variant="outlined" style = {{minWidth: 80}}>
+                <InputLabel style = {{backgroundColor: 'white'}}>{this.props.label}</InputLabel>
                 <Select
                     value={this.state.selection}
                     style={this.props.style}

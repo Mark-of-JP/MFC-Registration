@@ -31,12 +31,12 @@ export default class SpouseInfoCard extends Component {
                             <TextField style={{ paddingBottom: 10, paddingRight: 30 }} label="Spouse Name" onChange={(val) => { this.addInput("spouse_name", val.target.value)}}/>
                             <TextField style={{ paddingBottom: 10, paddingRight: 30 }} label="Spouse Nickname" onChange={(val) => { this.addInput("spouse_nick", val.target.value)}}/>
 
-                            <SelectComponent value="Couples" style={{ marginRight: 30 }} onChange={(val) => { this.addInput("spouse_section", val)}}>
+                            <SelectComponent label = "Section" value="Couples" style={{ marginRight: 30 }} onChange={(val) => { this.addInput("spouse_section", val)}}>
                                 <MenuItem value="Couples">Couples</MenuItem>
                                 <MenuItem value="Servant">Servant</MenuItem>
                                 <MenuItem value="Handmaid">Handmaid</MenuItem>
                             </SelectComponent>
-                            <SelectComponent value="M" onChange={(val) => { this.addInput("spouse_size", val)}}>
+                            <SelectComponent label = "Shirt Size" value="M" onChange={(val) => { this.addInput("spouse_size", val)}}>
                                 <MenuItem value="S">S</MenuItem>
                                 <MenuItem value="M">M</MenuItem>
                                 <MenuItem value="L">L</MenuItem>
